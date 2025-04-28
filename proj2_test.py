@@ -13,7 +13,7 @@ def load_model_weights(model, weights = None):
     my_model.summary()
     return my_model
 
-def get_images_labels(df, classes, img_height=224, img_width=224):
+def get_images_labels(df, classes, img_height=300, img_width=300):
     images = []
     labels = []
     label_map = {label: idx for idx, label in enumerate(sorted(classes))}
